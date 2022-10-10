@@ -4,6 +4,8 @@ import { collection, addDoc, doc, serverTimestamp } from "firebase/firestore";
 import { toast } from "react-toastify";
 import "./Mailing.css";
 import Modal from "../Modal/Modal";
+import ReCAPTCHA from 'react-google-recaptcha'
+
 
 const Mailing = () => {
   const [name, setName] = useState("");
@@ -49,6 +51,8 @@ const Mailing = () => {
             }}
             required
           />
+          <ReCAPTCHA
+            sitekey="6Lc70esgAAAAAEtyUSSA-nCxMuE_EjDOc3hoKbtn"/>
           <button onClick={createMail}>Join Now</button>
           {/* <Modal open={openModal} onClose={() => setOpenModal(false)} /> */}
         </div>

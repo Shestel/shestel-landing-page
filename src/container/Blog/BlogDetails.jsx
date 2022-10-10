@@ -21,6 +21,7 @@ import {
 import Comment from "../../components/Comment/Comment";
 import Navbar from "../../components/Navbar/Navbar";
 import CustomLoader from "../../components/CustomLoader/CustomLoader";
+import {DiscussionEmbed} from "disqus-react";
 
 const BlogDetails = () => {
   const { id } = useParams();
@@ -63,6 +64,14 @@ const BlogDetails = () => {
       setLoading(false);
     }, 2500);
   }, []);
+
+  // Disqus Config
+  const disqusShortname = "shestel-com";
+  const disqusConfig = {
+    url: 'https://shestel.com/',
+    identifier: blog?.id,
+    title: blog?.title,
+  };
 
   return (
     <>
@@ -141,7 +150,12 @@ const BlogDetails = () => {
                 }}
               ></div>
             </div>
-             {/* <Comment /> */}
+            <DiscussionEmbed
+              shortname={disqusShortname}
+              config={disqusConfig}
+            />
+            
+            {/* <Comment /> */}
           </div>
           <Footer />
         </>

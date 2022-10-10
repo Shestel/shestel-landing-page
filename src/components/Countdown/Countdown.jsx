@@ -72,7 +72,7 @@ const Countdown = () => {
         <span>:</span>
         <div>
           <h2>{hours}</h2>
-          <p>Hrs</p>
+          <p>Hours</p>
         </div>
         <span>:</span>
         <div>

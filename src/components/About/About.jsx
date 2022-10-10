@@ -21,17 +21,10 @@ const About = () => {
           content recommendations.
         </p>
 
-        <div className="about__features--content"  data-aos="fade-up"
-              data-aos-offset="250"
-              data-aos-delay="100"
-              data-aos-duration="1000"
-              data-aos-easing="ease">
+        <div className="about__features--content">
           <h2>Product Features</h2>
           <div className="about__reasons">
-            <div
-              className="about__reasons--child"
-             
-            >
+            <div className="about__reasons--child">
               <img src={check} alt="icon" />
               <p>Personalized User Profile</p>
             </div>

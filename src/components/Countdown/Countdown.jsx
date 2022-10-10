@@ -72,17 +72,17 @@ const Countdown = () => {
         <span>:</span>
         <div>
           <h2>{hours}</h2>
-          <p>Hours</p>
+          <p>Hrs</p>
         </div>
         <span>:</span>
         <div>
           <h2>{minutes}</h2>
-          <p>Minutes</p>
+          <p>Mins</p>
         </div>
         <span>:</span>
         <div>
           <h2>{seconds}</h2>
-          <p>Seconds</p>
+          <p>Secs</p>
         </div>
       </div>
       <h2 className="countdown__date">DECEMBER 6TH, 2022</h2>

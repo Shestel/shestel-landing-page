@@ -1,0 +1,136 @@
+.countdown__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 80px;
+}
+
+.counter__child {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin: 40px 0 30px 0;
+}
+
+.counter__child div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.countdown__form {
+  margin-top: 20px;
+}
+
+.countdown__form div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.countdown__form input {
+  width: 100%;
+  padding: 12px;
+  font-size: 13px;
+  outline: none;
+  resize: none;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.countdown__form button {
+  background: #b941ff;
+  display: inline-block;
+  font-size: 15px;
+  border-radius: 5px;
+  padding: 11px 16px;
+  color: #f8f9fa;
+  transition: all ease-in-out 0.5s;
+  width: 40%;
+}
+
+.countdown__form button:hover {
+  transform: scale(0.95);
+}
+
+/* Countdown Media & Typography */
+.countdown__container img {
+  width: 13%;
+}
+
+.counter__child h2 {
+  font-size: 30px;
+}
+
+.counter__child p {
+  font-size: 20px;
+}
+
+.countdown__date {
+  margin-bottom: 40px;
+}
+
+.countdown__mailing h2 {
+  font-size: 20px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 700px) {
+  .countdown__container {
+    margin-top: 10px;
+    padding: 30px 20px;
+  }
+
+  .counter__child {
+    gap: 10px;
+    margin: 30px 0;
+  }
+
+  .countdown__form div {
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .countdown__form input {
+    margin-bottom: 20px;
+  }
+
+  .countdown__form button {
+    font-size: 14px;
+    width: 30%;
+  }
+
+  /* Countdown Media & Typography */
+  .countdown__container img {
+    width: 24%;
+  }
+
+  .counter__child h2 {
+    font-size: 24px;
+  }
+
+  .counter__child p {
+    font-size: 16px;
+  }
+
+  .countdown__mailing h2 {
+    font-size: 17px;
+    text-align: center;
+  }
+
+  .countdown__date {
+    margin-bottom: 28px;
+  }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 700px) {
+  .countdown__container img {
+    width: 15%;
+  }
+
+  .countdown__container {
+    margin-top: 40px;
+  }
+}

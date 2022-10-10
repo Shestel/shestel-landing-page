@@ -1,0 +1,103 @@
+.features__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 0px;
+}
+
+.features__child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 15px;
+  transition: all ease-in-out 0.5s;
+  text-align: center;
+  background: hsla(197, 100%, 63%, 1);
+
+  background: linear-gradient(
+    90deg,
+    hsla(197, 100%, 63%, 1) 0%,
+    hsla(278, 100%, 63%, 1) 68%
+  );
+
+  background: -moz-linear-gradient(
+    90deg,
+    hsla(197, 100%, 63%, 1) 0%,
+    hsla(278, 100%, 63%, 1) 68%
+  );
+
+  background: -webkit-linear-gradient(
+    90deg,
+    hsla(197, 100%, 63%, 1) 0%,
+    hsla(278, 100%, 63%, 1) 68%
+  );
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#40C9FF", endColorstr="#B941FF", GradientType=1 );
+  /* background: hsla(197, 100%, 63%, 1);
+
+background: linear-gradient(135deg, hsla(197, 100%, 63%, 1) 14%, hsla(278, 100%, 63%, 1) 68%);
+
+background: -moz-linear-gradient(135deg, hsla(197, 100%, 63%, 1) 14%, hsla(278, 100%, 63%, 1) 68%);
+
+background: -webkit-linear-gradient(135deg, hsla(197, 100%, 63%, 1) 14%, hsla(278, 100%, 63%, 1) 68%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#40C9FF", endColorstr="#B941FF", GradientType=1 ); */
+  border-radius: 5px;
+}
+
+.features__child:hover {
+  transform: scale(0.97);
+}
+
+.features__child img {
+  width: 20%;
+  margin-bottom: 20px;
+}
+
+/* Features Typography */
+.features__child h2 {
+  font-size: 18px;
+  margin-bottom: 14px;
+}
+
+@media screen and (max-width: 680px) {
+  .features__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0;
+    grid-row-gap: 25px;
+  }
+
+  .features__child {
+    padding: 20px 15px;
+    margin: 0 40px;
+  }
+
+  /* .features__child img {
+    width: 20%;
+    margin-bottom: 20px;
+  } */
+
+  /* Features Typography */
+  .features__child h2 {
+    font-size: 16px;
+    margin-bottom: 14px;
+  }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 700px) {
+  .features__child img {
+    width: 28%;
+  }
+
+  .features__child h2 {
+    font-size: 16px;
+  }
+
+  .features__child p {
+    font-size: 13px;
+  }
+}

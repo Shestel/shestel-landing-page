@@ -1,0 +1,13 @@
+.button__wrapper button {
+  display: inline-block;
+  font-size: 15px;
+  background-color: #00afb9;
+  border-radius: 5px;
+  padding: 11px 16px;
+  color: #f8f9fa;
+  transition: all ease-in-out 0.5s;
+}
+
+.button__wrapper button:hover {
+  transform: scale(0.95);
+}

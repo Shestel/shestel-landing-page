@@ -1,0 +1,199 @@
+.about__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 90px;
+  margin: 50px 0;
+  padding: 80px 60px;
+}
+
+.about__media {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.about__content {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+}
+
+/* .about__media img {
+  width: 50%;
+} */
+
+.about__media--right {
+  margin-top: 50px;
+}
+
+.about__reasons {
+  margin-top: 15px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+}
+
+.about__reasons--child {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 20px;
+  padding: 20px 15px;
+  text-align: center;
+  background: hsla(197, 100%, 63%, 1);
+
+  background: linear-gradient(
+    90deg,
+    hsla(197, 100%, 63%, 1) 0%,
+    hsla(278, 100%, 63%, 1) 68%
+  );
+
+  background: -moz-linear-gradient(
+    90deg,
+    hsla(197, 100%, 63%, 1) 0%,
+    hsla(278, 100%, 63%, 1) 68%
+  );
+
+  background: -webkit-linear-gradient(
+    90deg,
+    hsla(197, 100%, 63%, 1) 0%,
+    hsla(278, 100%, 63%, 1) 68%
+  );
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#40C9FF", endColorstr="#B941FF", GradientType=1 );
+  border-radius: 5px;
+}
+
+.about__reasons--child img {
+  width: 17%;
+}
+
+.about__features--content {
+  margin-top: 40px;
+}
+
+/* About Typography */
+.about__content h2 {
+  font-size: 27px;
+  margin-bottom: 10px;
+}
+
+.about__content p {
+  font-size: 16px;
+  margin-bottom: 25px;
+  line-height: 26px;
+}
+
+.about__features--content h2 {
+  font-size: 23px;
+}
+
+
+.about__reasons--child p {
+  font-size: 15px;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1024px) {
+  .about__container {
+    display: block;
+    margin: 25px 0;
+    padding: 20px 20px;
+    text-align: left;
+  }
+
+  .about__media {
+    width: 100%;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .about__content {
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .about__media img {
+    width: 46%;
+  }
+
+  .about__media--right {
+    margin-top: 50px;
+  }
+
+  .about__reasons {
+    margin-top: 15px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0;
+    grid-row-gap: 30px;
+  }
+
+  .about__reasons--child {
+    gap: 12px;
+    margin-bottom: 15px;
+    margin: 0 13%;
+  }
+
+  .about__reasons--child img {
+    width: 15%;
+  }
+
+  /* About Typography */
+  .about__content h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .about__content p {
+    font-size: 14px;
+    margin-bottom: 15px;
+    line-height: 30px;
+  }
+
+  .about__reasons--child p {
+    font-size: 14px;
+  }
+
+  .about__features--content h2 {
+    font-size: 21px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1040px) and (min-width: 700px) {
+  .about__container {
+    padding: 60px 40px;
+  }
+
+  .about__content p {
+    font-size: 15px;
+    margin-bottom: 15px;
+    line-height: 30px;
+  }
+
+  .about__reasons--child {
+    margin: 0 16%;
+  }
+
+  .about__reasons--child p {
+    font-size: 15px;
+  }
+
+  .about__reasons--child img {
+    width: 5%;
+  }
+
+  .about__media img {
+    width: 35%;
+    border-radius: 5px;
+  }
+}

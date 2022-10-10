@@ -1,0 +1,139 @@
+.banner__container {
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+  height: 100vh;
+  width: 100%;
+  gap: 40px;
+  padding: 5% 5% 1% 5%;
+  margin-top: 40px;
+}
+
+.banner__content {
+  width: 50%;
+}
+
+.banner__media {
+  width: 50%;
+}
+
+.banner__media video {
+  border: none;
+}
+
+.banner__media img {
+  width: 55%;
+  border-radius: 7px;
+}
+
+.banner__image-top {
+  position: absolute;
+  top: -3%;
+  right: 0;
+}
+
+.banner__image--bottom {
+  position: absolute;
+  bottom: -10%;
+  right: 0;
+}
+
+.banner__media .carousel__container {
+  display: none;
+}
+
+/* Banner Typography*/
+.banner__content h1 {
+  font-size: 37px;
+}
+
+.banner__content p {
+  font-size: 16px;
+  line-height: 28px;
+  margin-top: 15px;
+}
+
+.banner__media p {
+  display: none;
+}
+
+/* Media Query */
+@media screen and (max-width: 1024px) {
+  .banner__container {
+    flex-direction: column;
+    height: 100%;
+    padding: 3% 5% 5% 5%;
+  }
+
+  .banner__content {
+    width: 100%;
+  }
+
+  .banner__media {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  /* .banner__media img {
+    width: 60%;
+  } */
+
+  .banner__image-top {
+    position: absolute;
+    top: -3%;
+    right: 0;
+  }
+
+  .banner__image--bottom {
+    position: absolute;
+    bottom: -10%;
+    right: 0;
+  }
+
+  /* Banner Typography*/
+  .banner__content h1 {
+    font-size: 23px;
+  }
+
+  .banner__content p {
+    display: none;
+  }
+
+  .banner__media p {
+    display: block;
+    font-size: 16px;
+    line-height: 30px;
+    margin-top: 15px;
+  } 
+
+  .banner__content .carousel__container {
+    display: none;
+  }
+
+  .banner__media .carousel__container {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 700px) {
+  .banner__media {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .banner__media img {
+    width: 48%;
+  }
+
+  .banner__image-top {
+    position: absolute;
+    top: -3%;
+    right: 15%;
+  }
+
+  .banner__image--bottom {
+    position: absolute;
+    bottom: -8%;
+    right: 15%;
+  }
+}

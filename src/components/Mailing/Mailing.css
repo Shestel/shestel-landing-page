@@ -1,0 +1,88 @@
+.mailing__container {
+  background: #b941ff;
+  margin: 100px 80px;
+  padding: 90px 40px;
+  border-radius: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.mailing__content {
+  width: 30%;
+}
+
+.mailing__form {
+  width: 70%;
+}
+
+.mailing__form div {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.mailing__form input {
+  width: 100%;
+  padding: 10px;
+  font-size: 13px;
+  outline: none;
+  resize: none;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.mailing__form button {
+  background: #333;
+  display: inline-block;
+  font-size: 14px;
+  border-radius: 5px;
+  padding: 11px 16px;
+  color: #fff;
+  transition: all ease-in-out 0.5s;
+  width: 40%;
+}
+
+.mailing__form button:hover {
+  transform: scale(0.95);
+}
+
+@media screen and (max-width: 1024px) {
+  .mailing__container {
+    margin: 60px 20px;
+    padding: 90px 20px;
+    display: block;
+    text-align: center;
+  }
+
+  .mailing__content {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .mailing__form {
+    width: 100%;
+  }
+
+  .mailing__form div {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .mailing__form button {
+    width: 40%;
+    margin-top: 17px;
+  }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 700px) {
+  .mailing__container {
+    margin: 60px 20px;
+    padding: 90px 20px;
+  }
+
+  .mailing__form {
+    padding: 0 60px;
+  }
+}

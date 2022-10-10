@@ -4,6 +4,7 @@ import { collection, addDoc, doc, serverTimestamp } from "firebase/firestore";
 import { toast } from "react-toastify";
 import "./Countdown.css";
 import deadline from "../../assets/images/deadline.png";
+import ReCAPTCHA from 'react-google-recaptcha'
 
 const Countdown = () => {
   const [days, setDays] = useState("00");
@@ -85,7 +86,7 @@ const Countdown = () => {
           <p>Secs</p>
         </div>
       </div>
-      <h2 className="countdown__date">DECEMBER 6TH, 2022</h2>
+      <h2 className="countdown__date">DECEMBER 6th, 2022</h2>
 
       <div className="countdown__mailing">
         <h2>
@@ -114,6 +115,9 @@ const Countdown = () => {
               }}
               required
             />
+            <ReCAPTCHA
+            sitekey="6Lc70esgAAAAAEtyUSSA-nCxMuE_EjDOc3hoKbtn"/>
+            {/* <div className='g-recaptcha' data-sitekey='6Lc70esgAAAAAEtyUSSA-nCxMuE_EjDOc3hoKbtn'></div> */}
             <button onClick={buildMail}>Join Now</button>
           </div>
         </div>

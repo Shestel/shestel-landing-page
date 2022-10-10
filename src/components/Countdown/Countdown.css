@@ -54,6 +54,7 @@
 .countdown__form div {
   display: flex;
   align-items: center;
+  flex-direction: column;
   gap: 10px;
 }
 
@@ -96,11 +97,12 @@
 }
 
 .countdown__date {
+  font-size: 26px;
   margin-bottom: 40px;
 }
 
 .countdown__mailing h2 {
-  font-size: 20px;
+  font-size: 22px;
 }
 
 /* Media Queries */

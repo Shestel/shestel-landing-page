@@ -23,6 +23,7 @@ import CustomLoader from "../../components/CustomLoader/CustomLoader";
 const initialState = {
   title: "",
   tags: [],
+  writtenBy: '',
   // category: [],
   trending: "no",
   // category: "",
@@ -39,7 +40,7 @@ const AddEditBlog = ({ user, setActive }) => {
   const navigate = useNavigate();
 
   // const { title, tags, category, trending, description } = form;
-  const { title, tags, trending, description } = form;
+  const { title, tags, trending, description, writtenBy } = form;
 
   // For Image Upload
   useEffect(() => {
@@ -120,7 +121,7 @@ const AddEditBlog = ({ user, setActive }) => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    if (tags && title && description && trending) {
+    if (tags && title && description && trending && writtenBy) {
       if (!id) {
         try {
           await addDoc(collection(db, "blogs"), {
@@ -184,6 +185,16 @@ const AddEditBlog = ({ user, setActive }) => {
                   placeholder="Title"
                   name="title"
                   value={title}
+                  onChange={handleChange}
+                />
+              </div>
+              <div className="auth__input">
+                <input
+                  type="text"
+                  className="form-control input-text-box"
+                  placeholder="Written by"
+                  name="writtenBy"
+                  value={writtenBy}
                   onChange={handleChange}
                 />
               </div>

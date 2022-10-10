@@ -94,7 +94,7 @@ const BlogDetails = () => {
                 <h2>{blog?.title}</h2>
               </div>
               <div className="blog__details--written">
-                <p>By {blog?.author} </p>
+                <p>By {blog?.writtenBy} </p>
                 <span>{blog?.timestamp.toDate().toDateString()}</span>
               </div>
               <div className="blog__details--share">

@@ -67,7 +67,7 @@ const Blog = () => {
                     ></div>
                     <div className="blog__written">
                       <div className="blog__written--content">
-                        <p>Author: {blog.author}</p>
+                        <p>Author: {blog.writtenBy}</p>
                         <span>
                           <FcAlarmClock
                             style={{ width: "20px", height: "20px" }}

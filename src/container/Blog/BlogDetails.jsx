@@ -150,10 +150,10 @@ const BlogDetails = () => {
                 }}
               ></div>
             </div>
-            <DiscussionEmbed
+            {/* <DiscussionEmbed
               shortname={disqusShortname}
               config={disqusConfig}
-            />
+            /> */}
             
             {/* <Comment /> */}
           </div>

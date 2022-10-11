@@ -62,7 +62,7 @@
   .banner__container {
     flex-direction: column;
     height: 100%;
-    padding: 3% 5% 5% 5%;
+    padding: 3% 10px 5% 10px;
   }
 
   .banner__content {

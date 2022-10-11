@@ -11,6 +11,9 @@
   font-display: swap;
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap");
+
+
 .blog__details--container {
   display: flex;
   flex-direction: column;
@@ -37,8 +40,9 @@
 .blog__details--tag span {
   font-size: 14px;
   color: #b941ff;
-  font-family: "Blogger", Hevetica, Arial, sans-serif;
-
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  margin-right: 15px;
 }
 
 .blog__details--title {
@@ -47,8 +51,8 @@
 
 .blog__details--title h2 {
   font-size: 25px;
-  font-family: "Blogger", Hevetica, Arial, sans-serif;
-
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
 }
 
 .blog__details--written {
@@ -60,8 +64,8 @@
 
 .blog__details--written span {
   font-size: 14px;
-  font-family: "Blogger", Hevetica, Arial, sans-serif;
-
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
 }
 
 .blog__details--share {
@@ -79,8 +83,8 @@
 .blog__details--content div p {
   line-height: 30px;
   font-size: 17px;
-  font-family: "Blogger", Hevetica, Arial, sans-serif;
-
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
 }
 
 @media screen and (max-width: 1024px) {

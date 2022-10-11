@@ -12,7 +12,7 @@ const About = () => {
   return (
     <section className="about__container">
       <div className="about__content">
-        <h2>STREAMING MANAGEMENT APP</h2>
+        <h2>WHAT IS SHESTEL?</h2>
         <p>
           Shestel is a streaming management application to help online streaming
           users consolidate their streaming services to track their streaming
@@ -22,7 +22,7 @@ const About = () => {
         </p>
 
         <div className="about__features--content">
-          <h2>Product Features</h2>
+          <h2>Our Product Features:</h2>
           <div className="about__reasons">
             <div className="about__reasons--child">
               <img src={check} alt="icon" />

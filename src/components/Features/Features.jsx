@@ -6,7 +6,7 @@ import insight from "../../assets/images/insight.png";
 
 const Features = () => {
   return (
-    <section className="features__container" id="services">
+    <section className="features__container">
       <div className="features__child">
         <img src={mindmap} alt="Live Streaming" />
         <h2>Streaming Services Consolidation</h2>

@@ -73,7 +73,7 @@ const BlogList = () => {
           <div className="dashboard__blog--contents">
             <h2>Author</h2>
             {blog?.map((item) => (
-              <p key={item.id}>{item.author}</p>
+              <p key={item.id}>{item.writtenBy}</p>
             ))}
           </div>
           <div className="dashboard__blog--contents">

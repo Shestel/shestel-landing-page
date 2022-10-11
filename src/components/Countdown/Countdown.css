@@ -150,8 +150,9 @@
 
   .countdown__form button {
     font-size: 14px;
-    width: 30%;
+    width: 40%;
   }
+  
 
   /* Countdown Media & Typography */
   .countdown__container img {
@@ -173,7 +174,10 @@
 
   .countdown__date {
     margin-bottom: 28px;
+    font-size: 20px;
   }
+  
+  
 }
 
 @media screen and (max-width: 1000px) and (min-width: 700px) {

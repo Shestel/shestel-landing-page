@@ -85,7 +85,7 @@
   </head>
   <body>
     <script>
-      (function (w, d, s, u, f, m, n, o) {
+      (window.onbeforeunload = function (w, d, s, u, f, m, n, o) {
         o = "https://survey.zohopublic.com";
         w[f] =
           w[f] ||
@@ -109,4 +109,3 @@
     <div id="root"></div>
   </body>
 </html>
- 

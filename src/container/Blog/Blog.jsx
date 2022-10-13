@@ -50,11 +50,11 @@ const Blog = () => {
                     <img src={blog.imgUrl} alt={blog.title} />
                   </div>
                   <div className="blog__item--middle">
-                    <div className="blog__item--middle__span">
+                    {/* <div className="blog__item--middle__span">
                       {blog?.tags.map((tag) => (
                         <span className="heading-blog-category">{tag}</span>
                       ))}
-                    </div>
+                    </div> */}
 
                     <h2 className="heading-blog-title">{blog.title}</h2>
                   </div>

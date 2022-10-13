@@ -6,13 +6,15 @@
       format("embedded-opentype"),
     url("../../assets/fonts/Blogger/Blogger\ Sans-Medium.otf") format("otf"),
     url("../../assets/fonts/Blogger/Blogger\ Sans-Medium.otf") format("otf"),
-    url("../../assets/fonts/Blogger/Blogger\ Sans-Medium.otf") format("truetype");
+    url("../../assets/fonts/Blogger/Blogger\ Sans-Medium.otf")
+      format("truetype");
   font-style: normal;
   font-display: swap;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600&display=swap");
 
 .blog__details--container {
   display: flex;
@@ -20,6 +22,9 @@
   align-items: center;
   /* justify-content: center; */
   padding: 100px 80px;
+  /* background-color: #fefae0; */
+  background-color: #eee;
+  color: #333;
 }
 
 .blog__details--cover {
@@ -40,7 +45,7 @@
 .blog__details--tag span {
   font-size: 14px;
   color: #b941ff;
-  font-family: "Roboto", sans-serif;
+  font-family: "Nunito", sans-serif;
   font-weight: 500;
   margin-right: 15px;
 }
@@ -51,7 +56,7 @@
 
 .blog__details--title h2 {
   font-size: 25px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Nunito", sans-serif;
   font-weight: 700;
 }
 
@@ -64,7 +69,7 @@
 
 .blog__details--written span {
   font-size: 14px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Nunito", sans-serif;
   font-weight: 500;
 }
 
@@ -83,7 +88,7 @@
 .blog__details--content div p {
   line-height: 30px;
   font-size: 17px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Nunito", sans-serif;
   font-weight: 500;
 }
 
@@ -110,7 +115,7 @@
   }
 
   .blog__details--written span {
-    font-size: 13px; 
+    font-size: 13px;
   }
 
   .blog__details--share {

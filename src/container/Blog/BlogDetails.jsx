@@ -24,6 +24,7 @@ import CustomLoader from "../../components/CustomLoader/CustomLoader";
 import { DiscussionEmbed } from "disqus-react";
 // import { Helmet } from "react-helmet";
 import Giscus from "@giscus/react";
+import Mailing from "../../components/Mailing/Mailing";
 
 const BlogDetails = () => {
   const { id } = useParams();
@@ -199,6 +200,7 @@ const BlogDetails = () => {
             {/* <Comment /> */}
             {/* <div id="disqus_thread"></div> */}
           </div>
+          <Mailing/>
           <Footer />
         </>
       )}

@@ -18,10 +18,12 @@ import {
   TelegramIcon,
   RedditIcon,
 } from "react-share";
-import Comment from "../../components/Comment/Comment";
+// import Comment from "../../components/Comment/Comment";
 import Navbar from "../../components/Navbar/Navbar";
 import CustomLoader from "../../components/CustomLoader/CustomLoader";
-import {DiscussionEmbed} from "disqus-react";
+import { DiscussionEmbed } from "disqus-react";
+// import { Helmet } from "react-helmet";
+import Giscus from "@giscus/react";
 
 const BlogDetails = () => {
   const { id } = useParams();
@@ -65,13 +67,30 @@ const BlogDetails = () => {
     }, 2500);
   }, []);
 
-  // Disqus Config
-  const disqusShortname = "shestel-com";
-  const disqusConfig = {
-    url: 'https://shestel.com/',
-    identifier: blog?.id,
-    title: blog?.title,
-  };
+  // useEffect(() => {
+  //   const DISQUS_SCRIPT = 'disq_script'
+  //   const sd = document.getElementById(DISQUS_SCRIPT)
+  //   if (!sd) {
+  //     var disqus_config = function() {
+  //       this.page.url = `https://shestel.com/blog/${id}`;
+  //       this.page.identifier = blog.id
+  //     }
+
+  //     const d = document
+  //     const s = d.createElement('script')
+  //     s.src = 'https://www-shestel-com.disqus.com/embed.js';// REPLACE THIS LINE WITH YOUR DISQUS LINE
+  //     s.id = DISQUS_SCRIPT
+  //     s.async = true
+  //     s.setAttribute('data-timestamp', +new Date())
+
+  //     d.body.appendChild(s)
+  //   } else {
+  //     window.DISQUS.reset({
+  //       reload: true,
+  //       config: disqus_config,
+  //     })
+  //   }
+  // }, [])
 
   return (
     <>
@@ -87,7 +106,7 @@ const BlogDetails = () => {
             <div className="blog__details--description">
               <div className="blog__details--tag">
                 {blog?.tags.map((tag) => (
-                  <span>{tag}</span>
+                  <span key={blog.id}>{tag}</span>
                 ))}
               </div>
               <div className="blog__details--title">
@@ -151,11 +170,34 @@ const BlogDetails = () => {
               ></div>
             </div>
             {/* <DiscussionEmbed
-              shortname={disqusShortname}
-              config={disqusConfig}
+              shortname="shestel-com"
+              config={{
+                // url: `https://shestel.com/blog/${blog.id}`,
+                url: `https://localhost:3000/blog/https://cors-anywhere.herokuapp.com/corsdemo`,
+                identifier: id,
+                // title: blog.title,
+              }}
             /> */}
-            
+            {/* <Giscus
+              src="https://giscus.app/client.js"
+              repo="Shestel/shestel-landing-page"
+              repoId="R_kgDOILfkaw"
+              category="General"
+              categoryId="DIC_kwDOILfka84CR8mL"
+              mapping="url"
+              strict="0"
+              reactionsEnabled="1"
+              emitMetadata="0"
+              inputPosition="bottom"
+              theme="dark_tritanopia"
+              lang="en"
+              crossorigin="anonymous"
+              loading="lazy"
+              async
+            /> */}
+
             {/* <Comment /> */}
+            {/* <div id="disqus_thread"></div> */}
           </div>
           <Footer />
         </>

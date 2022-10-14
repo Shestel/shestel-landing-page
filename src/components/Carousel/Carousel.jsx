@@ -1,9 +1,9 @@
 import React from "react";
 import "./Carousel.css";
 import Slider from "react-slick";
-import jigsaw from "../../assets/images/jigsaw.png";
-import money from "../../assets/images/money.png";
-import chat from "../../assets/images/chat.png";
+// import jigsaw from "../../assets/images/jigsaw.png";
+// import money from "../../assets/images/money.png";
+// import chat from "../../assets/images/chat.png";
 // import netflix from '../../assets/images/netflix.webp'
 // import apple from '../../assets/images/apple.webp'
 // import peacock from '../../assets/images/peacock.webp'

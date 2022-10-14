@@ -24,6 +24,8 @@ import CustomLoader from "../../components/CustomLoader/CustomLoader";
 import { DiscussionEmbed } from "disqus-react";
 import Giscus from "@giscus/react";
 import Mailing from "../../components/Mailing/Mailing";
+import { ReactCusdis } from "react-cusdis";
+// import { Helmet } from "react-helmet";
 
 const BlogDetails = () => {
   const { id } = useParams();
@@ -106,7 +108,7 @@ const BlogDetails = () => {
             <div className="blog__details--description">
               <div className="blog__details--tag">
                 {blog?.tags.map((tag) => (
-                  <span key={blog.id}>{tag}</span>
+                  <span key={tag.id}>{tag}</span>
                 ))}
               </div>
               <div className="blog__details--title">
@@ -197,7 +199,18 @@ const BlogDetails = () => {
             />
 
             {/* <Comment /> */}
-            {/* <div id="disqus_thread"></div> */}
+            {/* <div className="cudis__container">
+              <ReactCusdis
+                attrs={{
+                  host: "https://cusdis.com",
+                  appId: "d58fe715-ed28-43cf-a702-384a54a3cebf",
+                  pageId: blog?.id,
+                  pageTitle: blog?.title,
+                  pageUrl: `https://shestel.com/blog/${id}`,
+                }}
+              />
+            </div> */}
+            <div id="graphcomment"></div>
           </div>
           <Mailing />
           <Footer />

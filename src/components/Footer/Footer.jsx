@@ -2,6 +2,7 @@ import React from "react";
 import "./Footer.css";
 import { AiFillFacebook, AiOutlineInstagram } from "react-icons/ai";
 import { GrTwitter } from "react-icons/gr";
+import { FaTiktok } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -25,10 +26,8 @@ const Footer = () => {
         >
           Terms & Condition
         </a>
-       
-       <Link to='/blog'>
-        Blog
-       </Link>
+
+        <Link to="/blog">Blog</Link>
       </div>
       <div className="footer__socials">
         <a
@@ -54,6 +53,14 @@ const Footer = () => {
           rel="noreferrer"
         >
           <AiOutlineInstagram className="footer__icon" />
+        </a>
+        <a
+          href="https://tiktok.com/shestel_com/"
+          className="social-media__links"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <FaTiktok className="footer__icon" />
         </a>
       </div>
     </footer>

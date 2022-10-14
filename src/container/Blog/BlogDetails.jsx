@@ -22,7 +22,6 @@ import {
 import Navbar from "../../components/Navbar/Navbar";
 import CustomLoader from "../../components/CustomLoader/CustomLoader";
 import { DiscussionEmbed } from "disqus-react";
-// import { Helmet } from "react-helmet";
 import Giscus from "@giscus/react";
 import Mailing from "../../components/Mailing/Mailing";
 
@@ -179,7 +178,7 @@ const BlogDetails = () => {
                 // title: blog.title,
               }}
             /> */}
-            {/* <Giscus
+            <Giscus
               src="https://giscus.app/client.js"
               repo="Shestel/shestel-landing-page"
               repoId="R_kgDOILfkaw"
@@ -190,17 +189,17 @@ const BlogDetails = () => {
               reactionsEnabled="1"
               emitMetadata="0"
               inputPosition="bottom"
-              theme="dark_tritanopia"
+              theme="light"
               lang="en"
               crossorigin="anonymous"
               loading="lazy"
               async
-            /> */}
+            />
 
             {/* <Comment /> */}
             {/* <div id="disqus_thread"></div> */}
           </div>
-          <Mailing/>
+          <Mailing />
           <Footer />
         </>
       )}

@@ -1,14 +1,9 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./About.css";
 // import imageabout from "../../assets/images/image-about.webp";
 // import image16 from "../../assets/images/image16.webp";
 import check from "../../assets/images/check-mark.png";
-import AOS from "aos";
-import "aos/dist/aos.css";
 const About = () => {
-  useEffect(() => {
-    AOS.init();
-  }, []);
   return (
     <section className="about__container">
       <div className="about__content">

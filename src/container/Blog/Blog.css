@@ -20,7 +20,8 @@
 .blog__home--container {
   display: flex;
   flex-direction: column;
-  background-color: #fefae0;
+  /* background-color: #fefae0; */
+  background-color: #fff;
   color: #333;
 }
 

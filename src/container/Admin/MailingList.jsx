@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import { db } from "../../firebase";
 import { collection, getDocs, doc } from "firebase/firestore";
 import { auth } from "../../firebase";
@@ -6,6 +6,7 @@ import "../Blog/AdminBlog.css";
 import SideNavbar from "../../components/Sidebar/SideNavbar";
 import AdminNavbar from "./AdminNavbar";
 import CustomLoader from "../../components/CustomLoader/CustomLoader";
+import { DataGrid } from "@material-ui/data-grid";
 
 const MailingList = () => {
   const [user, setUser] = useState(null);
@@ -41,6 +42,54 @@ const MailingList = () => {
     }, 2500);
   }, []);
 
+  const columns = useMemo(
+    () => [
+      { field: "name", headerName: "Name", minWidth: 200, flex: 1 },
+      { field: "id", headerName: "ID", minWidth: 200, flex: 1 },
+      { field: "mail", headerName: "Email", minWidth: 200, flex: 1 },
+      {
+        field: "timestamp",
+        headerName: "Subscribed",
+        minWidth: 200,
+        flex: 1,
+      },
+      // {
+      //   field: "actions",
+      //   headerName: "Actions",
+      //   minWidth: 200,
+      //   flex: 1,
+      //   type: "number",
+      //   sortable: false,
+      //   renderCell: (params) => {
+      //     return (
+      //       <>
+      //         <Link to={`/update-blog/${params.id}`}>
+      //           <AiOutlineEdit className="dashboard__home--icon" />
+      //         </Link>
+
+      //         <BsTrash
+      //           onClick={() => handleDelete(params.id)}
+      //           className="dashboard__home--icon"
+      //         />
+      //       </>
+      //     );
+      //   },
+      // },
+    ],
+    []
+  );
+  const rows = [];
+
+  mail &&
+    mail.forEach((ma) => {
+      rows.push({
+        id: ma.id,
+        timestamp: ma.timestamp.toDate().toDateString(),
+        mail: ma.mail,
+        name: ma.name,
+      });
+    });
+
   return (
     <>
       {loading ? (
@@ -50,7 +99,7 @@ const MailingList = () => {
           <div className="dashboard__blog--wrapper">
             <h2>Mailing List</h2>
             <div className="dashboard__blog--child">
-              <div className="dashboard__blog--contents">
+              {/* <div className="dashboard__blog--contents">
                 <h2>Name</h2>
                 {mail?.map((item) => (
                   <p key={item.id}>{item.name}</p>
@@ -73,7 +122,17 @@ const MailingList = () => {
                 {mail?.map((item) => (
                   <p key={item.id}>{item.timestamp.toDate().toDateString()}</p>
                 ))}
-              </div>
+              </div> */}
+              <DataGrid
+                rows={rows}
+                columns={columns}
+                pageSize={10}
+                disableSelectionOnClick
+                className="productListTable"
+                autoHeight
+                rowsPerPageOptions={[10]}
+                // checkboxSelection
+              />
             </div>
           </div>
         </>

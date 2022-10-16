@@ -21,10 +21,10 @@ import {
 // import Comment from "../../components/Comment/Comment";
 import Navbar from "../../components/Navbar/Navbar";
 import CustomLoader from "../../components/CustomLoader/CustomLoader";
-import { DiscussionEmbed } from "disqus-react";
+// import { DiscussionEmbed } from "disqus-react";
 import Giscus from "@giscus/react";
 import Mailing from "../../components/Mailing/Mailing";
-import { ReactCusdis } from "react-cusdis";
+// import { ReactCusdis } from "react-cusdis";
 // import { Helmet } from "react-helmet";
 
 const BlogDetails = () => {

@@ -55,7 +55,7 @@ const Footer = () => {
           <AiOutlineInstagram className="footer__icon" />
         </a>
         <a
-          href="https://tiktok.com/shestel_com/"
+          href="https://www.tiktok.com/@shestel_com?_t=8WWUQxS0AGU&_r=1"
           className="social-media__links"
           target="_blank"
           rel="noreferrer"

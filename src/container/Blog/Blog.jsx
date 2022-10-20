@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { collection, getDocs, doc } from "firebase/firestore";
+import { collection, getDocs, doc, query, orderBy } from "firebase/firestore";
 import { db } from "../../firebase";
 import { excerpt } from "../../utility/index";
 import "./Blog.css";
@@ -8,6 +8,8 @@ import Footer from "../../components/Footer/Footer";
 import { FcAlarmClock } from "react-icons/fc";
 import Navbar from "../../components/Navbar/Navbar";
 import CustomLoader from "../../components/CustomLoader/CustomLoader";
+import { Helmet } from "react-helmet";
+
 // import { Parser } from "html-to-react";
 
 const Blog = () => {
@@ -15,8 +17,10 @@ const Blog = () => {
 
   const blogsCollectionRef = collection(db, "blogs");
   useEffect(() => {
+    const q = query(blogsCollectionRef, orderBy("timestamp", 'desc'))
     const getBlogs = async () => {
-      const data = await getDocs(blogsCollectionRef);
+      // const data = await getDocs(blogsCollectionRef);
+      const data = await getDocs(q);
       setBlogs(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
     };
 
@@ -39,6 +43,24 @@ const Blog = () => {
       ) : (
         <>
           <Navbar />
+          {/* <Helmet>
+            <head>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-NGGECRKPSW"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-NGGECRKPSW");
+    </script>
+            </head>
+  
+          </Helmet> */}
           <section className="blog__home--container">
             <div className="blog__home--top">
               <h2 className="heading-main-blog">Our Latest Posts.</h2>
@@ -62,7 +84,7 @@ const Blog = () => {
                     <div
                       className="blog__description"
                       dangerouslySetInnerHTML={{
-                        __html: excerpt(blog.description, 220),
+                        __html: excerpt(blog.description, 250),
                       }}
                     ></div>
                     <div className="blog__written">

@@ -25,7 +25,7 @@ import CustomLoader from "../../components/CustomLoader/CustomLoader";
 import Giscus from "@giscus/react";
 import Mailing from "../../components/Mailing/Mailing";
 // import { ReactCusdis } from "react-cusdis";
-// import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet";
 
 const BlogDetails = () => {
   const { id } = useParams();
@@ -101,6 +101,9 @@ const BlogDetails = () => {
       ) : (
         <>
           <Navbar />
+          <Helmet>
+            <title>Shestel | {blog?.title}</title>
+          </Helmet>
           <div className="blog__details--container">
             <div className="blog__details--cover">
               <img src={blog?.imgUrl} alt={blog?.title} />

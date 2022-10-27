@@ -22,7 +22,7 @@ import {
 import Navbar from "../../components/Navbar/Navbar";
 import CustomLoader from "../../components/CustomLoader/CustomLoader";
 // import { DiscussionEmbed } from "disqus-react";
-import Giscus from "@giscus/react";
+// import Giscus from "@giscus/react";
 import Mailing from "../../components/Mailing/Mailing";
 // import { ReactCusdis } from "react-cusdis";
 import { Helmet } from "react-helmet";
@@ -100,10 +100,15 @@ const BlogDetails = () => {
         <CustomLoader loading={loading} />
       ) : (
         <>
-          <Navbar />
           <Helmet>
+          <script
+              async
+              src="https://www.googletagmanager.com/gtag/js?id=G-NGGECRKPSW"
+            ></script>
             <title>Shestel | {blog?.title}</title>
           </Helmet>
+          <Navbar />
+
           <div className="blog__details--container">
             <div className="blog__details--cover">
               <img src={blog?.imgUrl} alt={blog?.title} />
@@ -183,7 +188,7 @@ const BlogDetails = () => {
                 // title: blog.title,
               }}
             /> */}
-            <Giscus
+            {/* <Giscus
               src="https://giscus.app/client.js"
               repo="Shestel/shestel-landing-page"
               repoId="R_kgDOILfkaw"
@@ -199,7 +204,7 @@ const BlogDetails = () => {
               crossorigin="anonymous"
               loading="lazy"
               async
-            />
+            /> */}
 
             {/* <Comment /> */}
             {/* <div className="cudis__container">

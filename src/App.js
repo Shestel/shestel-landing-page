@@ -18,6 +18,8 @@ import Error404 from "./container/Error404/Error404";
 import AdminMailing from "./container/Admin/AdminMailing";
 import AdminBlog from "./container/Blog/AdminBlog";
 import ScrollToTop from "./components/Scroll-to-top/index";
+import { HelmetProvider } from 'react-helmet-async';
+
 
 function App() {
   const [user, setUser] = useState(null);
@@ -38,6 +40,7 @@ function App() {
       <Router>
         <ToastContainer position="top-center" />
         <ScrollToTop />
+        <HelmetProvider>
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route exact path="/blog" element={<Blog />} />
@@ -69,6 +72,7 @@ function App() {
           />
           <Route exact path="*" element={<Error404 />} />
         </Routes>
+        </HelmetProvider>
       </Router>
     </div>
   );

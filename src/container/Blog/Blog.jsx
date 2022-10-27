@@ -8,8 +8,7 @@ import Footer from "../../components/Footer/Footer";
 import { FcAlarmClock } from "react-icons/fc";
 import Navbar from "../../components/Navbar/Navbar";
 import CustomLoader from "../../components/CustomLoader/CustomLoader";
-import { Helmet } from "react-helmet";
-
+import { Helmet } from "react-helmet-async";
 // import { Parser } from "html-to-react";
 
 const Blog = () => {
@@ -17,7 +16,7 @@ const Blog = () => {
 
   const blogsCollectionRef = collection(db, "blogs");
   useEffect(() => {
-    const q = query(blogsCollectionRef, orderBy("timestamp", 'desc'))
+    const q = query(blogsCollectionRef, orderBy("timestamp", "desc"));
     const getBlogs = async () => {
       // const data = await getDocs(blogsCollectionRef);
       const data = await getDocs(q);
@@ -39,28 +38,30 @@ const Blog = () => {
   return (
     <>
       {loading ? (
-        <CustomLoader loading={loading}/>
+        <CustomLoader loading={loading} />
       ) : (
         <>
-          <Navbar />
-          {/* <Helmet>
-            <head>
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-NGGECRKPSW"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
+          <Helmet>
+            {/* <head>
+            <script
+              async
+              src="https://www.googletagmanager.com/gtag/js?id=G-NGGECRKPSW"
+            ></script>
+             <script>
+              window.dataLayer = window.dataLayer || [];
+              function gtag() {
+                dataLayer.push(arguments);
+              }
+              gtag("js", new Date());
 
-      gtag("config", "G-NGGECRKPSW");
-    </script>
-            </head>
-  
-          </Helmet> */}
+              gtag("config", "G-NGGECRKPSW");
+              
+      
+               </script>
+            </head> */}
+          </Helmet>
+          <Navbar />
+
           <section className="blog__home--container">
             <div className="blog__home--top">
               <h2 className="heading-main-blog">Our Latest Posts.</h2>

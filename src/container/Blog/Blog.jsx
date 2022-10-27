@@ -59,6 +59,25 @@ const Blog = () => {
       
                </script>
             </head> */}
+            <head>
+              <script
+                async
+                src={`https://www.googletagmanager.com/gtag/js?id=G-NGGECRKPSW`}
+              />
+              <script
+                dangerouslySetInnerHTML={{
+                  __html: `
+          window.dataLayer = window.dataLayer || [];
+          function gtag() {
+            dataLayer.push(arguments);
+          }
+          gtag("js", new Date());
+
+          gtag("config", "G-NGGECRKPSW");
+          `,
+                }}
+              />
+            </head>
           </Helmet>
           <Navbar />
 

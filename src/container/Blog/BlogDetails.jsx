@@ -101,7 +101,7 @@ const BlogDetails = () => {
       ) : (
         <>
           <Helmet>
-            <head>
+            {/* <head>
               <script
                 async
                 src={`https://www.googletagmanager.com/gtag/js?id=G-NGGECRKPSW`}
@@ -119,7 +119,7 @@ const BlogDetails = () => {
           `,
                 }}
               />
-            </head>
+            </head> */}
             <title>Shestel | {blog?.title}</title>
           </Helmet>
           <Navbar />

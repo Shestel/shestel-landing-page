@@ -59,7 +59,7 @@ const Blog = () => {
       
                </script>
             </head> */}
-            <head>
+            {/* <head>
               <script
                 async
                 src={`https://www.googletagmanager.com/gtag/js?id=G-NGGECRKPSW`}
@@ -77,7 +77,7 @@ const Blog = () => {
           `,
                 }}
               />
-            </head>
+            </head> */}
           </Helmet>
           <Navbar />
 

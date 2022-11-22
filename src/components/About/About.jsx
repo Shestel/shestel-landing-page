@@ -23,7 +23,7 @@ const About = () => {
         </p>
 
         <div className="about__features--content">
-          <h2>A quick overview of our features:</h2>
+          <h2>A Quick Overview of Our Features:</h2>
           <div className="about__reasons">
             <div className="about__reasons--child">
               <img src={check} alt="icon" />

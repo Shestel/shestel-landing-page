@@ -178,6 +178,10 @@
     text-align: center;
   }
 
+  .countdown__launch {
+    font-size: 22px !important;
+  }
+
   .counter__h2 {
     font-size: 18px;
     text-align: start;

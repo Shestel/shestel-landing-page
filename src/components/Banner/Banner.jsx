@@ -12,7 +12,7 @@ const Banner = () => {
     <>
       <div className="banner__container">
         <div className="banner__content">
-          <h1>EXPLORE MORE CONTENT, SAVE TIME DISCOVERING YOUR PREFERENCES THROUGH COMMUNITY.</h1>
+          <h1>EXPLORE MORE CONTENT, SAVE TIME DISCOVERING YOUR PREFERENCES</h1>
           <p>
             Don't be overwhelmed searching for your movies, TV Shows and Sports Schedules.
             <br />

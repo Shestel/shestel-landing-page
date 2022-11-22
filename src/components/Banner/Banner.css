@@ -93,6 +93,7 @@
   /* Banner Typography*/
   .banner__content h1 {
     font-size: 23px;
+    text-align: center;
   }
 
   .banner__content p {

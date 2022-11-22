@@ -29,7 +29,7 @@ const Countdown = () => {
   let interval = useRef();
 
   const startTimer = () => {
-    const countdownDate = new Date("December 6 2022 00:00:00").getTime();
+    const countdownDate = new Date("December 11 2022 00:00:00").getTime();
 
     interval = setInterval(() => {
       const now = new Date().getTime();
@@ -86,12 +86,16 @@ const Countdown = () => {
           <p>Secs</p>
         </div>
       </div>
-      <h2 className="countdown__date">DECEMBER 6th, 2022</h2>
+      <h2 className="countdown__date">DECEMBER 11th, 2022</h2>
+      <h2 className="counter__h2">
+        Do you want to be a beta tester, built your content community and share the movies you love, engage with friends and discover fascinating TV series?
+      </h2>
+      <br />
 
       <div className="countdown__mailing">
+        <h2 className="countdown__launch">Launching soon</h2>
         <h2>
-          Join our Mailing List To Be The First To Know When Our Streaming App
-          Launches.
+          Join our mailing list, we would love to have you.
         </h2>
 
         <div className="countdown__form">
@@ -116,7 +120,7 @@ const Countdown = () => {
               required
             />
             <ReCAPTCHA
-            sitekey="6Lc70esgAAAAAEtyUSSA-nCxMuE_EjDOc3hoKbtn"/>
+              sitekey="6Lc70esgAAAAAEtyUSSA-nCxMuE_EjDOc3hoKbtn" />
             {/* <div className='g-recaptcha' data-sitekey='6Lc70esgAAAAAEtyUSSA-nCxMuE_EjDOc3hoKbtn'></div> */}
             <button onClick={buildMail}>Join Now</button>
           </div>

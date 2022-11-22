@@ -9,30 +9,36 @@ import videoweb from "../../assets/videos/intro-web.webm";
 
 const Banner = () => {
   return (
-    <div className="banner__container">
-      <div className="banner__content">
-        <h1>MANAGE ALL YOUR STREAMING SERVICES USING ONE APP.</h1>
-        <p>
-          Consolidate Your Streaming Service Providers, Track Your Subscription
-          Plan Expenses, Your Favorite Movies, TV shows and Connect With Your
-          Friends.
-        </p>
-        <Carousel />
+    <>
+      <div className="banner__container">
+        <div className="banner__content">
+          <h1>EXPLORE MORE CONTENT, SAVE TIME DISCOVERING YOUR PREFERENCES THROUGH COMMUNITY.</h1>
+          <p>
+            Don't be overwhelmed searching for your movies, TV Shows and Sports Schedules.
+            <br />
+            Stay in control over where your movies, TV shows are, expand your horizon and engage with new and old friends to share your love for a good entertainment.
+          </p>
+          {/* <Carousel /> */}
+        </div>
+        <div className="banner__media">
+          <video autoPlay loop muted playsInline>
+            <source src={videoweb} type="video/webm" />
+            <source src={video} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <p>
+            Don't be overwhelmed searching for your movies, TV Shows and Sports Schedules.
+            <br />
+            Stay in control over where your movies, TV shows are, expand your horizon and engage with new and old friends to share your love for a good entertainment.
+          </p>
+          {/* <Carousel /> */}
+        </div>
       </div>
-      <div className="banner__media">
-        <video autoPlay loop muted playsInline>
-          <source src={videoweb} type="video/webm" />
-          <source src={video} type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-        <p>
-          Consolidate Your Streaming Service Providers, Track Your Subscription
-          Plan Expenses, Your Favorite Movies, TV shows and Connect With Your
-          Friends.
-        </p>
+
+      <section>
         <Carousel />
-      </div>
-    </div>
+      </section>
+    </>
   );
 };
 

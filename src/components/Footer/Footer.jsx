@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <footer>
       <div className="footer__child">
-        <h3>&#169;2022 Shestel LLC. </h3>
+        <h3>&#169;2022 Shestel&#8482; LLC. </h3>
       </div>
       <div className="footer__external">
         <a

@@ -5,7 +5,7 @@
   /* padding: 20px 15px; */
   transition: all ease-in-out 0.5s;
   text-align: center;
-  margin-top: 50px;
+  /* margin-top: 50px; */
 }
 
 .carousel--content {
@@ -21,7 +21,7 @@
 }
 
 .carousel--content {
-  width: 9% !important;
+  width: 50% !important;
 }
 
 .slick-arrow {
@@ -64,8 +64,8 @@
   .carousel--content h2 {
     font-size: 25px !important;
   }
-  
-  
+
+
 .carousel--content {
   margin: 0 auto !important;
   justify-content: center !important;
@@ -78,9 +78,9 @@
 }
 
 .carousel--content {
-  width: 15% !important;
+  width: 70% !important;
 }
-  
+
 }
 
 @media screen and (max-width: 1000px) and (min-width: 700px) {
@@ -88,7 +88,7 @@
   .carousel__container img {
     margin-top: 30px;
   }
-  
+
   /* .slick-slide img {
     width: 45% !important;
   } */

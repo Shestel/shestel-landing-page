@@ -28,7 +28,7 @@ const Mailing = () => {
     <div className="mailing__container">
       <div className="mailing__content">
         <h2>Join Our Mailing List</h2>
-        <p>Be The First To Know When Our Streaming Management App Launches.</p>
+        <p>Be the first one testing the features of our content community platform.</p>
       </div>
       <div className="mailing__form">
         <div>

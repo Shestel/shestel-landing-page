@@ -49,25 +49,19 @@
   text-align: center;
   background: hsla(197, 100%, 63%, 1);
 
-  background: linear-gradient(
-    90deg,
-    hsla(197, 100%, 63%, 1) 0%,
-    hsla(278, 100%, 63%, 1) 68%
-  );
+  background: linear-gradient(90deg,
+      hsla(197, 100%, 63%, 1) 0%,
+      hsla(278, 100%, 63%, 1) 68%);
 
-  background: -moz-linear-gradient(
-    90deg,
-    hsla(197, 100%, 63%, 1) 0%,
-    hsla(278, 100%, 63%, 1) 68%
-  );
+  background: -moz-linear-gradient(90deg,
+      hsla(197, 100%, 63%, 1) 0%,
+      hsla(278, 100%, 63%, 1) 68%);
 
-  background: -webkit-linear-gradient(
-    90deg,
-    hsla(197, 100%, 63%, 1) 0%,
-    hsla(278, 100%, 63%, 1) 68%
-  );
+  background: -webkit-linear-gradient(90deg,
+      hsla(197, 100%, 63%, 1) 0%,
+      hsla(278, 100%, 63%, 1) 68%);
 
-  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#40C9FF", endColorstr="#B941FF", GradientType=1 );
+  filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#40C9FF", endColorstr="#B941FF", GradientType=1);
   border-radius: 5px;
 }
 
@@ -151,12 +145,14 @@
   .about__content h2 {
     font-size: 20px;
     margin-bottom: 15px;
+    text-align: center;
   }
 
   .about__content p {
     font-size: 17px;
     margin-bottom: 15px;
     line-height: 30px;
+    text-align: center;
   }
 
   .about__reasons--child p {

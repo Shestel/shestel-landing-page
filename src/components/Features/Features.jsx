@@ -9,24 +9,24 @@ const Features = () => {
     <section className="features__container">
       <div className="features__child">
         <img src={mindmap} alt="Live Streaming" />
-        <h2>Streaming Services Consolidation</h2>
-        <p>Bring your Streaming Services all in one place.</p>
+        <h2>Organize and control your content providers</h2>
+        <p>Save time searching your content across platform.</p>
+        <p>Manage your recurring subscription expenses.</p>
+        <p>Making informed decision on the services you like.</p>
       </div>
-      <div className="features__child">
+      {/* <div className="features__child">
         <img src={work} alt="Content access" />
         <h2>Content and Subscription Plan Tracking</h2>
         <p>
           Track your favorite movies, TV shows and your subscription plan from
           your streaming services providers.
         </p>
-      </div>
+      </div> */}
       <div className="features__child">
         <img src={insight} alt="Social networking" />
-        <h2>Social Community Platform</h2>
-        <p>
-          Connect with friends to discover and explore more movies, TV shows to
-          watch and have fun conversations.
-        </p>
+        <h2>Content Community platform </h2>
+        <p>Find and connect with friends to share your taste in movies, TV shows and more.</p>
+        <p>Engage in conversation to help you understand your entertainment preferences better.</p>
       </div>
     </section>
   );

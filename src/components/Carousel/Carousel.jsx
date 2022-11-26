@@ -1,6 +1,7 @@
 import React from "react";
 import "./Carousel.css";
 import Slider from "react-slick";
+import image from '../../assets/images/company0.webp'
 import image1 from "../../assets/images/company1.webp"
 import image2 from "../../assets/images/company2.webp"
 import image3 from "../../assets/images/company3.webp"
@@ -55,7 +56,9 @@ const Carousel = () => {
   return (
     <div className="carousel__container">
       <Slider {...settings}>
-
+      <div className="carousel--content">
+          <img src={image} alt="About-Shestel" />
+        </div>
         <div className="carousel--content">
           <img src={image1} alt="About-Shestel" />
         </div>

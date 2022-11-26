@@ -113,7 +113,7 @@ const Countdown = () => {
               type="email"
               name="email"
               value={mail}
-              placeholder="Mailing address"
+              placeholder="Email Address"
               onChange={(event) => {
                 setMail(event.target.value);
               }}

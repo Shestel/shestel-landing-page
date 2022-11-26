@@ -88,7 +88,7 @@ const Countdown = () => {
       </div>
       <h2 className="countdown__date">DECEMBER 11th, 2022</h2>
       <h2 className="counter__h2">
-        Do you want to be a beta tester, built your content community and share the movies you love, engage with friends and discover fascinating TV series?
+        Do you want to be a beta tester, build your content community and share the movies you love, engage with friends and discover fascinating TV series?
       </h2>
       <br />
 

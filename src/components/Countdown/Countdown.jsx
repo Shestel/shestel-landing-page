@@ -65,6 +65,7 @@ const Countdown = () => {
 
   return (
     <section className="countdown__container">
+      
       <img src={deadline} alt="Countdown Timer" />
       <div className="counter__child">
         <div>
@@ -88,6 +89,32 @@ const Countdown = () => {
         </div>
       </div>
       <h2 className="countdown__date">DECEMBER 11th, 2022</h2>
+      <div className="countdown__testing">
+        <h2>Try Out The Beta Version of Our App On Your Preferred Devices</h2>
+
+        <div className="countdown__testing--child">
+          <div className="countdown__box">
+            <a
+              href="https://play.google.com/store/apps/details?id=com.shestel.app"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={playstore} alt="playstore logo" />
+              Test on Android
+            </a>
+          </div>
+          <div className="countdown__box">
+            <a
+              href="https://testflight.apple.com/join/FmsJYpIB"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={apple} alt="apple icon" />
+              Test on iOS
+            </a>
+          </div>
+        </div>
+      </div>
       <h2 className="counter__h2">
         Do you want to be a beta tester, build your content community and share
         the movies you love, engage with friends and discover fascinating TV
@@ -126,32 +153,7 @@ const Countdown = () => {
           </div>
         </div>
       </div>
-      <div className="countdown__testing">
-        <h2>Try Out The Beta Version of Our App On Your Preferred Devices</h2>
-
-        <div className="countdown__testing--child">
-          <div className="countdown__box">
-            <a
-              href="https://play.google.com/store/apps/details?id=com.shestel.app"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img src={playstore} alt="playstore logo" />
-              Test on Android
-            </a>
-          </div>
-          <div className="countdown__box">
-            <a
-              href="https://testflight.apple.com/join/FmsJYpIB"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img src={apple} alt="apple icon" />
-              Test on iOS
-            </a>
-          </div>
-        </div>
-      </div>
+      
     </section>
   );
 };

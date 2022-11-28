@@ -4,8 +4,9 @@ import { collection, addDoc, doc, serverTimestamp } from "firebase/firestore";
 import { toast } from "react-toastify";
 import "./Countdown.css";
 import deadline from "../../assets/images/deadline.png";
-import ReCAPTCHA from 'react-google-recaptcha'
-
+import ReCAPTCHA from "react-google-recaptcha";
+import apple from "../../assets/images/apple-logo.png";
+import playstore from "../../assets/images/playstore.png";
 const Countdown = () => {
   const [days, setDays] = useState("00");
   const [hours, setHours] = useState("00");
@@ -88,15 +89,15 @@ const Countdown = () => {
       </div>
       <h2 className="countdown__date">DECEMBER 11th, 2022</h2>
       <h2 className="counter__h2">
-        Do you want to be a beta tester, build your content community and share the movies you love, engage with friends and discover fascinating TV series?
+        Do you want to be a beta tester, build your content community and share
+        the movies you love, engage with friends and discover fascinating TV
+        series?
       </h2>
       <br />
 
       <div className="countdown__mailing">
         <h2 className="countdown__launch">Launching soon</h2>
-        <h2>
-          Join our mailing list, we would love to have you.
-        </h2>
+        <h2>Join our mailing list, we would love to have you.</h2>
 
         <div className="countdown__form">
           <div>
@@ -119,10 +120,35 @@ const Countdown = () => {
               }}
               required
             />
-            <ReCAPTCHA
-              sitekey="6Lc70esgAAAAAEtyUSSA-nCxMuE_EjDOc3hoKbtn" />
+            <ReCAPTCHA sitekey="6Lc70esgAAAAAEtyUSSA-nCxMuE_EjDOc3hoKbtn" />
             {/* <div className='g-recaptcha' data-sitekey='6Lc70esgAAAAAEtyUSSA-nCxMuE_EjDOc3hoKbtn'></div> */}
             <button onClick={buildMail}>Join Now</button>
+          </div>
+        </div>
+      </div>
+      <div className="countdown__testing">
+        <h2>Try Out The Beta Version of Our App On Your Preferred Devices</h2>
+
+        <div className="countdown__testing--child">
+          <div className="countdown__box">
+            <a
+              href="https://play.google.com/store/apps/details?id=com.shestel.app"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={playstore} alt="playstore logo" />
+              Test on Android
+            </a>
+          </div>
+          <div className="countdown__box">
+            <a
+              href="https://testflight.apple.com/join/FmsJYpIB"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={apple} alt="apple icon" />
+              Test on iOS
+            </a>
           </div>
         </div>
       </div>

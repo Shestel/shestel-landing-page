@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { FiLogOut } from "react-icons/fi";
 import { HiOutlineMenuAlt2 } from "react-icons/hi";
 import "./Navbar.css";
-import logo from '../../assets/images/logo-bg.webp'
+import logo from '../../assets/images/brand.webp'
 
 
 const Navbar = () => {

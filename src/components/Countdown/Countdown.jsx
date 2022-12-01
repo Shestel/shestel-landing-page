@@ -113,7 +113,7 @@ const Countdown = () => {
               Test on iOS
             </a>
           </div>
-        </div>
+        </div> 
       </div>
       <h2 className="counter__h2">
         Do you want to be a beta tester, build your content community and share

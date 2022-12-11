@@ -8,10 +8,10 @@ import ReCAPTCHA from "react-google-recaptcha";
 import apple from "../../assets/images/apple-logo.png";
 import playstore from "../../assets/images/playstore.png";
 const Countdown = () => {
-  const [days, setDays] = useState("00");
-  const [hours, setHours] = useState("00");
-  const [minutes, setMinutes] = useState("00");
-  const [seconds, setSeconds] = useState("00");
+  // const [days, setDays] = useState("00");
+  // const [hours, setHours] = useState("00");
+  // const [minutes, setMinutes] = useState("00");
+  // const [seconds, setSeconds] = useState("00");
 
   const [name, setName] = useState("");
   const [mail, setMail] = useState("");
@@ -27,46 +27,46 @@ const Countdown = () => {
     toast.success("Thank you for Subscribing!");
   };
 
-  let interval = useRef();
+  // let interval = useRef();
 
-  const startTimer = () => {
-    const countdownDate = new Date("December 11 2022 00:00:00").getTime();
+  // const startTimer = () => {
+  //   const countdownDate = new Date("December 11 2022 00:00:00").getTime();
 
-    interval = setInterval(() => {
-      const now = new Date().getTime();
-      const distance = countdownDate - now;
-      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      const hours = Math.floor(
-        (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-      );
-      const minutes = Math.floor((distance % (60 * 60 * 1000)) / (1000 * 60));
-      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  //   interval = setInterval(() => {
+  //     const now = new Date().getTime();
+  //     const distance = countdownDate - now;
+  //     const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  //     const hours = Math.floor(
+  //       (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+  //     );
+  //     const minutes = Math.floor((distance % (60 * 60 * 1000)) / (1000 * 60));
+  //     const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-      if (distance < 0) {
-        // Stop Timer
-        clearInterval(interval.current);
-      } else {
-        // update timer
-        setDays(days);
-        setHours(hours);
-        setMinutes(minutes);
-        setSeconds(seconds);
-      }
-    }, 1000);
-  };
+  //     if (distance < 0) {
+  //       // Stop Timer
+  //       clearInterval(interval.current);
+  //     } else {
+  //       // update timer
+  //       setDays(days);
+  //       setHours(hours);
+  //       setMinutes(minutes);
+  //       setSeconds(seconds);
+  //     }
+  //   }, 1000);
+  // };
 
-  useEffect(() => {
-    const clearme = interval.current;
-    startTimer();
-    return () => {
-      clearInterval(clearme);
-    };
-  });
+  // useEffect(() => {
+  //   const clearme = interval.current;
+  //   startTimer();
+  //   return () => {
+  //     clearInterval(clearme);
+  //   };
+  // });
 
   return (
     <section className="countdown__container">
       
-      <img src={deadline} alt="Countdown Timer" />
+      {/* <img src={deadline} alt="Countdown Timer" />
       <div className="counter__child">
         <div>
           <h2>{days}</h2>
@@ -88,7 +88,7 @@ const Countdown = () => {
           <p>Secs</p>
         </div>
       </div>
-      <h2 className="countdown__date">DECEMBER 11th, 2022</h2>
+      <h2 className="countdown__date">DECEMBER 11th, 2022</h2> */}
       <div className="countdown__testing">
         <h2>Try Out The Beta Version of Our App On Your Preferred Devices</h2>
 

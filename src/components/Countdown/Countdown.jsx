@@ -90,9 +90,9 @@ const Countdown = () => {
       </div>
       <h2 className="countdown__date">DECEMBER 11th, 2022</h2> */}
       <div className="countdown__testing">
-        <h2>Try Out The Beta Version of Our App On Your Preferred Devices</h2>
+        <h2>Try Our New App</h2>
 
-        <div className="countdown__testing--child">
+        {/* <div className="countdown__testing--child">
           <div className="countdown__box">
             <a
               href="https://play.google.com/store/apps/details?id=com.shestel.app"
@@ -100,7 +100,7 @@ const Countdown = () => {
               rel="noreferrer"
             >
               <img src={playstore} alt="playstore logo" />
-              Test on Android
+              Download on Android
             </a>
           </div>
           <div className="countdown__box">
@@ -110,21 +110,42 @@ const Countdown = () => {
               rel="noreferrer"
             >
               <img src={apple} alt="apple icon" />
-              Test on iOS
+              Download on iOS
             </a>
           </div>
-        </div> 
+        </div>  */}
       </div>
       <h2 className="counter__h2">
-        Do you want to be a beta tester, build your content community and share
-        the movies you love, engage with friends and discover fascinating TV
-        series?
+        We have recently launched a content community platform, try it out and your feedback will be greatly appreciated.
       </h2>
       <br />
 
+      <div className="countdown__testing--child">
+          <div className="countdown__box">
+            <a
+              href="https://play.google.com/store/apps/details?id=com.shestel.app"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={playstore} alt="playstore logo" />
+              Download on Android
+            </a>
+          </div>
+          <div className="countdown__box">
+            <a
+              href="https://testflight.apple.com/join/FmsJYpIB"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={apple} alt="apple icon" />
+              Download on iOS
+            </a>
+          </div>
+        </div>
+
       <div className="countdown__mailing">
-        <h2 className="countdown__launch">Launching soon</h2>
-        <h2>Join our mailing list, we would love to have you.</h2>
+        {/* <h2 className="countdown__launch">Launching soon</h2> */}
+        <h2>Join our mailing list, to remain updated on new features and improvements and be the first to test them.</h2>
 
         <div className="countdown__form">
           <div>

@@ -89,7 +89,6 @@
   font-size: 23px;
 }
 
-
 .about__reasons--child p {
   font-size: 15px;
 }
@@ -124,21 +123,21 @@
   }
 
   .about__reasons {
-    margin-top: 15px;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
-    grid-column-gap: 0;
+    grid-column-gap: 10px;
     grid-row-gap: 30px;
   }
 
   .about__reasons--child {
-    gap: 12px;
+    gap: 0;
     margin-bottom: 15px;
-    margin: 0 13%;
+    /* margin: 0 13%; */
+    padding: 15px 10px;
   }
 
   .about__reasons--child img {
-    width: 15%;
+    width: 25%;
   }
 
   /* About Typography */
@@ -156,7 +155,7 @@
   }
 
   .about__reasons--child p {
-    font-size: 14px;
+    font-size: 12px;
   }
 
   .about__features--content h2 {
